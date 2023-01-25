@@ -1,38 +1,39 @@
-.App {
+h1 {
+  color: rgb(54, 54, 209);
+  font-size: 5em;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h2 {
+  color: rgb(252, 252, 252);
+  text-shadow: 2px 2px black;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-image: linear-gradient(to bottom right, blue, white);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+header{
+  background-color: aquamarine;
 }
 
-.App-link {
-  color: #61dafb;
+.pet-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 80px;
+  padding: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* .pet_button {
+  background-color: white;
+  text-align: center;
+  border-color: black;
+} */ 
+/* that looked ugly */
+
+.pet_button:hover{
+  color: black;
+  border: red;
 }
